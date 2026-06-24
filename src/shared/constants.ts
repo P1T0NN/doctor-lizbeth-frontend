@@ -5,21 +5,12 @@ export const COMPANY_DATA = {
 	LOGO: '/logo/opt/logo_no_letters-128w.webp',
 	DESCRIPTION: 'Medicina estética con enfoque regenerativo en Jalostotitlán, Jalisco.',
 	PHONE: '+52 431 109 8145',
+	PHONE_HREF: 'tel:+524311098145',
 	WHATSAPP_URL: 'https://wa.me/524311098145',
 	BOOKING_URL: 'https://citas.medicalfile.io/dra.lizbethrazo',
 	INSTAGRAM_URL: 'https://instagram.com/dra.lizbethrazo',
-	FACEBOOK_URL: '#',
+	FACEBOOK_URL: 'https://www.facebook.com/profile.php?id=100036084646125',
 	ADDRESS: 'Calle Miguel Hidalgo 19, Centro, 47120 Jalostotitlán, Jalisco'
-} as const;
-
-export const ADMIN_PAGE_ENDPOINTS = {
-	DASHBOARD: '/admin/dashboard',
-	USERS: '/admin/users',
-	USER: '/admin/users/:id'
-};
-
-export const PROTECTED_PAGE_ENDPOINTS = {
-	HOME: '/home'
 } as const;
 
 export const UNPROTECTED_PAGE_ENDPOINTS = {

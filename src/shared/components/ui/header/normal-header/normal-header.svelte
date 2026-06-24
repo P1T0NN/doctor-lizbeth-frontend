@@ -24,6 +24,7 @@
 
 	// LUCIDE ICONS
 	import MessageCircleIcon from '@lucide/svelte/icons/message-circle';
+	import PhoneIcon from '@lucide/svelte/icons/phone';
 
 	type Props = {
 		class?: string;
@@ -106,7 +107,20 @@
 
 		<div class="ml-auto flex shrink-0 items-center justify-end gap-3 lg:ml-0">
 			<a
-				href="https://wa.me/524311098145"
+				href={COMPANY_DATA.PHONE_HREF}
+				class={cn(
+					'hidden items-center gap-2 border px-4 py-2.5 text-xs tracking-widest uppercase transition-colors sm:inline-flex',
+					useSolidBar
+						? 'border-primary text-foreground hover:bg-muted'
+						: 'border-primary-foreground text-primary-foreground hover:bg-primary-foreground/10'
+				)}
+			>
+				<PhoneIcon class="size-4" strokeWidth={1.6} />
+				<span class="hidden md:inline">Llámanos</span>
+			</a>
+
+			<a
+				href={COMPANY_DATA.WHATSAPP_URL}
 				target="_blank"
 				rel="noopener noreferrer"
 				class={cn(
@@ -121,7 +135,15 @@
 			</a>
 
 			<a
-				href="https://wa.me/524311098145"
+				href={COMPANY_DATA.PHONE_HREF}
+				class="inline-flex size-10 items-center justify-center rounded-full border border-secondary text-secondary sm:hidden"
+				aria-label="Llámanos"
+			>
+				<PhoneIcon class="size-[18px]" strokeWidth={1.6} />
+			</a>
+
+			<a
+				href={COMPANY_DATA.WHATSAPP_URL}
 				target="_blank"
 				rel="noopener noreferrer"
 				class="inline-flex size-10 items-center justify-center rounded-full bg-secondary text-primary-foreground sm:hidden"

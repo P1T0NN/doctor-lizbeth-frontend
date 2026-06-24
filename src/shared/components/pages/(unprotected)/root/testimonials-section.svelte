@@ -29,7 +29,7 @@
 <section class="bg-muted py-24 lg:py-32">
 	<div class="mx-auto px-5 lg:px-10">
 		<div class="mx-auto max-w-2xl text-center">
-			<span class="label-eyebrow text-muted-foreground">Testimonios</span>
+			<span class="font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground">Testimonios</span>
 			<h2 class="mt-4 font-serif text-4xl leading-tight font-light text-foreground lg:text-5xl">
 				Lo que dicen <em class="italic">nuestras pacientes</em>.
 			</h2>
@@ -44,7 +44,7 @@
 					</blockquote>
 					<figcaption class="mt-8 border-t border-accent/30 pt-6">
 						<div class="font-serif text-lg text-foreground">{testimonial.name}</div>
-						<div class="label-eyebrow mt-1 text-muted-foreground">{testimonial.treatment}</div>
+						<div class="mt-1 font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground">{testimonial.treatment}</div>
 					</figcaption>
 				</figure>
 			{/each}

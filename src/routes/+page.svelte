@@ -1,7 +1,7 @@
 <script lang="ts">
 	// COMPONENTS
 	import HeroSection from '@/shared/components/pages/(unprotected)/root/hero-section.svelte';
-	import ServicesSection from '@/shared/components/pages/(unprotected)/root/services-section.svelte';
+	import ServicesSection from '@/shared/components/pages/(unprotected)/root/services-section/services-section.svelte';
 	import AboutSection from '@/shared/components/pages/(unprotected)/root/about-section.svelte';
 	import BookingSection from '@/shared/components/pages/(unprotected)/root/booking-section.svelte';
 	import GallerySection from '@/shared/components/pages/(unprotected)/root/gallery-section.svelte';

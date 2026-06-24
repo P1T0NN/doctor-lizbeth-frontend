@@ -171,14 +171,6 @@
 		background: color-mix(in oklch, var(--accent) 35%, transparent);
 	}
 
-	.label-eyebrow {
-		font-family: var(--font-body);
-		font-size: 0.6875rem;
-		font-weight: 500;
-		letter-spacing: 0.22em;
-		text-transform: uppercase;
-	}
-
 	.placeholder-bg {
 		background-image: repeating-linear-gradient(
 			45deg,

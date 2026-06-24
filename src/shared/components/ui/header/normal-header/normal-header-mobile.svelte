@@ -1,6 +1,5 @@
 <script lang="ts">
 	// SVELTEKIT
-	import { afterNavigate } from '$app/navigation';
 	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 
@@ -28,6 +27,7 @@
 	// LUCIDE ICONS
 	import MenuIcon from '@lucide/svelte/icons/menu';
 	import MessageCircleIcon from '@lucide/svelte/icons/message-circle';
+	import PhoneIcon from '@lucide/svelte/icons/phone';
 	import XIcon from '@lucide/svelte/icons/x';
 
 	let { hasLogo = true, isInverted = false }: { hasLogo?: boolean; isInverted?: boolean } =
@@ -79,7 +79,7 @@
 		>
 			<div class="min-w-0">
 				{#if hasLogo}
-					<Logo size="sm" onclick={normalHeader.closeMenu} />
+					<Logo size="sm" onclick={handleCloseMenu} />
 				{:else}
 					<span class="truncate font-serif text-[15px] tracking-wide text-foreground">
 						{COMPANY_DATA.NAME}
@@ -119,16 +119,27 @@
 				{/each}
 			</ul>
 
-			<a
-				href="https://wa.me/524311098145"
-				target="_blank"
-				rel="noopener noreferrer"
-				onclick={normalHeader.closeMenu}
-				class="mt-8 inline-flex w-full items-center justify-center gap-2 bg-primary py-4 text-xs tracking-widest text-primary-foreground uppercase transition-colors hover:bg-secondary"
-			>
-				<MessageCircleIcon class="size-4" strokeWidth={1.6} />
-				WhatsApp · {COMPANY_DATA.PHONE}
-			</a>
+			<div class="mt-8 flex flex-col gap-3">
+				<a
+					href={COMPANY_DATA.PHONE_HREF}
+					onclick={normalHeader.closeMenu}
+					class="inline-flex w-full items-center justify-center gap-2 border border-primary py-4 text-xs tracking-widest text-foreground uppercase transition-colors hover:bg-muted"
+				>
+					<PhoneIcon class="size-4" strokeWidth={1.6} />
+					Llámanos · {COMPANY_DATA.PHONE}
+				</a>
+
+				<a
+					href={COMPANY_DATA.WHATSAPP_URL}
+					target="_blank"
+					rel="noopener noreferrer"
+					onclick={normalHeader.closeMenu}
+					class="inline-flex w-full items-center justify-center gap-2 bg-primary py-4 text-xs tracking-widest text-primary-foreground uppercase transition-colors hover:bg-secondary"
+				>
+					<MessageCircleIcon class="size-4" strokeWidth={1.6} />
+					WhatsApp · {COMPANY_DATA.PHONE}
+				</a>
+			</div>
 		</nav>
 	</DrawerContent>
 </Drawer>

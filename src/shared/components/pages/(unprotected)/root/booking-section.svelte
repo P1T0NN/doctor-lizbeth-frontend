@@ -14,10 +14,12 @@
 <section id="agenda" class="bg-background py-24 lg:py-32">
 	<div class="mx-auto max-w-5xl px-5 lg:px-10">
 		<div class="mx-auto max-w-2xl text-center">
-			<span class="label-eyebrow text-muted-foreground">Agenda en línea</span>
+			<span class="font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground">Agenda en línea</span>
+
 			<h2 class="mt-4 font-serif text-4xl leading-tight font-light text-foreground lg:text-5xl">
 				Reserva tu cita <em class="italic">24/7</em>.
 			</h2>
+
 			<p class="mt-5 text-muted-foreground">
 				Selecciona el tratamiento, día y hora que mejor te acomode.
 			</p>
@@ -51,7 +53,7 @@
 		</div>
 
 		<p class="mt-6 text-center text-sm text-muted-foreground">
-			¿Prefieres agendar por WhatsApp?
+			¿Tienes Dudas?
 			<a
 				href={COMPANY_DATA.WHATSAPP_URL}
 				target="_blank"

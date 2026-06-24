@@ -1,7 +1,14 @@
 <script lang="ts">
+	// SVELTEKIT
 	import { resolve } from '$app/paths';
+
+	// CONFIG
 	import { COMPANY_DATA, UNPROTECTED_PAGE_ENDPOINTS } from '@/shared/constants.js';
+
+	// UTILS
 	import { cn } from '@/shared/utils/utils.js';
+
+	// TYPES
 	import type { HTMLAnchorAttributes } from 'svelte/elements';
 
 	type Props = {
@@ -50,9 +57,9 @@
 		class={cn('shrink-0', imgClass)}
 	/>
 	<span class="min-w-0 leading-tight">
-		<span class="block truncate font-serif text-[15px] tracking-wide">
+		<span class="block truncate font-serif text-sm tracking-wide">
 			{COMPANY_DATA.NAME}
 		</span>
-		<span class="label-eyebrow block truncate opacity-60"> Medicina Estética </span>
+		<span class="block truncate font-sans text-xs font-medium uppercase tracking-widest opacity-60"> Medicina Estética </span>
 	</span>
 </a>

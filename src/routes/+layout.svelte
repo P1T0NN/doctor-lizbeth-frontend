@@ -12,7 +12,7 @@
 
 <svelte:head><link rel="icon" href={favicon} /></svelte:head>
 <div class="flex min-h-dvh flex-col">
-	<NormalHeader isTransparent={true} changeBgOnScroll={true} />
+	<NormalHeader />
 	<div class="min-h-0 flex-1">
 		{@render children()}
 	</div>

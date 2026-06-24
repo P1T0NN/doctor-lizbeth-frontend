@@ -63,11 +63,11 @@
 		{#if showNav}
 			{#each footerLinkGroups as group (group.id)}
 				<nav aria-label={group.heading} class="min-w-0">
-					<h2 class="label-eyebrow text-primary-foreground/60">
+					<h2 class="font-sans text-xs font-medium uppercase tracking-widest text-primary-foreground/60">
 						{group.heading}
 					</h2>
 
-					<ul class="mt-5 flex gap-3">
+					<ul class="mt-5 flex flex-col gap-2.5">
 						{#each group.links as item (item.href)}
 							<li>
 								<a href={resolve(item.href)} class={footerLinkClass}>
@@ -81,11 +81,11 @@
 		{/if}
 
 		<div>
-			<h2 class="label-eyebrow text-primary-foreground/60">Síguenos</h2>
+			<h2 class="font-sans text-xs font-medium uppercase tracking-widest text-primary-foreground/60">Síguenos</h2>
 
 			<div class="mt-5 flex items-center gap-3">
 				<a
-					href="https://instagram.com/dra.lizbethrazo"
+					href={COMPANY_DATA.INSTAGRAM_URL}
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Instagram"
@@ -95,7 +95,7 @@
 				</a>
 
 				<a
-					href="https://facebook.com/dra.lizbethrazo"
+					href={COMPANY_DATA.FACEBOOK_URL}
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="Facebook"
@@ -105,7 +105,7 @@
 				</a>
 
 				<a
-					href="https://wa.me/524311098145"
+					href={COMPANY_DATA.WHATSAPP_URL}
 					target="_blank"
 					rel="noopener noreferrer"
 					aria-label="WhatsApp"

@@ -2,7 +2,7 @@
 	<div class="mx-auto px-5 lg:px-10">
 		<div class="flex max-w-4xl flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
 			<div>
-				<span class="label-eyebrow text-muted-foreground">Galería</span>
+				<span class="font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground">Galería</span>
 				<h2 class="mt-4 font-serif text-4xl leading-tight font-light text-foreground lg:text-5xl">
 					Resultados reales.
 				</h2>
@@ -17,10 +17,10 @@
 				<figure class="placeholder-bg relative aspect-square overflow-hidden bg-muted">
 					<div class="absolute inset-0 grid grid-cols-2">
 						<div class="flex items-end border-r border-primary-foreground/60 p-3">
-							<span class="label-eyebrow text-muted-foreground/80">Antes</span>
+							<span class="font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground/80">Antes</span>
 						</div>
 						<div class="flex items-end p-3">
-							<span class="label-eyebrow text-foreground">Después</span>
+							<span class="font-sans text-xl font-medium uppercase tracking-widest text-foreground">Después</span>
 						</div>
 					</div>
 				</figure>
