@@ -20,7 +20,5 @@ export type Service = {
 	description: string;
 	longDescription: string;
 	duration: string;
-	calendarColor: string;
-	calendarColorHex: string;
 	icon: IconComponent;
 };

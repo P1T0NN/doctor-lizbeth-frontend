@@ -50,23 +50,10 @@
 				{selectedService.longDescription}
 			</p>
 
-			<dl class="mt-5 space-y-3 text-sm">
-				<div class="flex items-center gap-2 text-muted-foreground">
-					<dt class="sr-only">Duración</dt>
-					<ClockIcon class="size-4 shrink-0" strokeWidth={1.6} />
-					<dd>{selectedService.duration}</dd>
-				</div>
-
-				<div class="flex items-center gap-2 text-muted-foreground">
-					<dt class="sr-only">Color en agenda</dt>
-					<span
-						class="size-3 shrink-0 rounded-full ring-1 ring-border"
-						style="background-color: {selectedService.calendarColorHex}"
-						aria-hidden="true"
-					></span>
-					<dd>{selectedService.calendarColor}</dd>
-				</div>
-			</dl>
+			<div class="mt-5 flex items-center gap-2 text-sm text-muted-foreground">
+				<ClockIcon class="size-4 shrink-0" strokeWidth={1.6} />
+				{selectedService.duration}
+			</div>
 
 			<a
 				href="#agenda"

@@ -22,8 +22,6 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Neuromodulador para mejorar líneas de expresión, hiperhidrosis (sudoración excesiva), migraña, sonrisa gingival y bruxismo.',
 		duration: '30 min',
-		calendarColor: 'Azul cielo',
-		calendarColorHex: '#87CEEB',
 		icon: SparklesIcon
 	},
 	{
@@ -31,8 +29,6 @@ export const SERVICES: Service[] = [
 		description: 'Bioestimulador de colágeno (ácido poli L láctico).',
 		longDescription: 'Bioestimulador de colágeno (ácido poli L láctico).',
 		duration: '45 min',
-		calendarColor: 'Azul marino',
-		calendarColorHex: '#1B3A5C',
 		icon: LayersIcon
 	},
 	{
@@ -40,8 +36,6 @@ export const SERVICES: Service[] = [
 		description: 'Limpieza facial profunda grado médico.',
 		longDescription: 'Limpieza facial profunda grado médico.',
 		duration: '1 hora',
-		calendarColor: 'Azul gris',
-		calendarColorHex: '#6B8BA4',
 		icon: GemIcon
 	},
 	{
@@ -50,8 +44,6 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Microagujas para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
-		calendarColor: 'Café',
-		calendarColorHex: '#6F4E37',
 		icon: ScanLineIcon
 	},
 	{
@@ -59,8 +51,6 @@ export const SERVICES: Service[] = [
 		description: 'HIFU para mejorar lifting y firmeza del rostro.',
 		longDescription: 'HIFU para mejorar lifting y firmeza del rostro.',
 		duration: '1 hora',
-		calendarColor: 'Fucsia',
-		calendarColorHex: '#C71585',
 		icon: WandSparklesIcon
 	},
 	{
@@ -68,8 +58,6 @@ export const SERVICES: Service[] = [
 		description: 'Definición y marcaje corporal con HIFEM.',
 		longDescription: 'HIFEM — 20,000 contracciones en 30 min para definición y marcaje corporal.',
 		duration: '30 min',
-		calendarColor: 'Negro',
-		calendarColorHex: '#232323',
 		icon: DumbbellIcon
 	},
 	{
@@ -77,8 +65,6 @@ export const SERVICES: Service[] = [
 		description: 'Radiofrecuencia para rostro y cuerpo.',
 		longDescription: 'Radiofrecuencia para mejorar flacidez, grasa y celulitis — rostro y cuerpo.',
 		duration: '1 hora',
-		calendarColor: 'Verde aqua',
-		calendarColorHex: '#40E0D0',
 		icon: RadioIcon
 	},
 	{
@@ -86,8 +72,6 @@ export const SERVICES: Service[] = [
 		description: 'Presoterapia y drenaje linfático.',
 		longDescription: 'Presoterapia y drenaje linfático.',
 		duration: '1 hora',
-		calendarColor: 'Verde pistache',
-		calendarColorHex: '#93C572',
 		icon: WindIcon
 	},
 	{
@@ -95,8 +79,6 @@ export const SERVICES: Service[] = [
 		description: 'Inyectable para flacidez y grasa localizada.',
 		longDescription: 'Inyectable para disminuir flacidez y grasa localizada.',
 		duration: '30 min',
-		calendarColor: 'Rosa',
-		calendarColorHex: '#F4A6C1',
 		icon: LeafIcon
 	},
 	{
@@ -105,8 +87,6 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Ácido hialurónico exclusivamente para labios. En este consultorio no lo usamos en pómulos, mentón ni otras áreas: únicamente labios, para volumen, hidratación y armonía del contorno labial.',
 		duration: '1 hora',
-		calendarColor: 'Rosa',
-		calendarColorHex: '#F4A6C1',
 		icon: DropletIcon
 	},
 	{
@@ -114,8 +94,6 @@ export const SERVICES: Service[] = [
 		description: 'Eliminación de vello no deseado en rostro y cuerpo.',
 		longDescription: 'Tecnología para eliminar el vello no deseado en rostro y cuerpo.',
 		duration: '15–90 min (según zona)',
-		calendarColor: 'Púrpura',
-		calendarColorHex: '#9B59B6',
 		icon: ZapIcon
 	},
 	{
@@ -124,8 +102,6 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Mesoterapia para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
-		calendarColor: 'Verde limón',
-		calendarColorHex: '#ADFF2F',
 		icon: SyringeIcon
 	}
 ];
