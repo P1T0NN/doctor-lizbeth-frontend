@@ -1,4 +1,7 @@
 <script lang="ts">
+	// CONFIG
+	import { COMPANY_DATA } from '@/shared/constants';
+
 	// COMPONENTS
 	import Dialog from '@/shared/components/ui/dialog/dialog.svelte';
 	import ServicesSectionItem from './services-section-item.svelte';
@@ -20,6 +23,14 @@
 		selectedService = service;
 		dialogOpen = true;
 	}
+
+	const whatsappBookingUrl = $derived(
+		selectedService
+			? `${COMPANY_DATA.WHATSAPP_URL}?text=${encodeURIComponent(
+					`Hola, me gustaría agendar una consulta para ${selectedService.name}.`
+				)}`
+			: COMPANY_DATA.WHATSAPP_URL
+	);
 </script>
 
 <section id="servicios" class="bg-muted py-24 lg:py-32">
@@ -56,7 +67,9 @@
 			</div>
 
 			<a
-				href="#agenda"
+				href={whatsappBookingUrl}
+				target="_blank"
+				rel="noopener noreferrer"
 				onclick={() => (dialogOpen = false)}
 				class="mt-6 inline-flex items-center gap-1.5 font-sans text-xs font-medium uppercase tracking-widest text-foreground transition-colors hover:text-secondary"
 			>
