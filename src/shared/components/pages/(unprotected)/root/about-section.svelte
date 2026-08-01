@@ -17,7 +17,7 @@
 		<div
 			class="flex flex-col gap-8 rounded-lg border border-accent/30 bg-background px-6 py-14 shadow-sm sm:px-10 lg:flex-row lg:items-stretch lg:gap-10 lg:py-20"
 		>
-			<div class="w-full shrink-0 lg:w-[400px]">
+			<div class="w-full shrink-0 lg:w-100">
 				<img
 					src="/root/opt/about-section-568w.webp"
 					alt="Foto de Dra. Lizbeth Razo"
@@ -36,7 +36,7 @@
 					</h2>
 
 					<p class="text-muted-foreground">
-						Acompaño a mujeres en su proceso de cuidado personal con tratamientos avanzados, siempre
+						Acompaño a personas en su proceso de cuidado personal con tratamientos avanzados, siempre
 						individualizados.
 					</p>
 

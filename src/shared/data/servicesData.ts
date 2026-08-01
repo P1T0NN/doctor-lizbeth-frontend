@@ -82,10 +82,9 @@ export const SERVICES: Service[] = [
 		icon: LeafIcon
 	},
 	{
-		name: 'Ácido hialurónico',
-		description: 'Solo labios — no se utiliza en ninguna otra zona.',
-		longDescription:
-			'Ácido hialurónico exclusivamente para labios. En este consultorio no lo usamos en pómulos, mentón ni otras áreas: únicamente labios, para volumen, hidratación y armonía del contorno labial.',
+		name: 'Cuidado de tus labios',
+		description: 'Tratamientos para labios injectables y no injectables. Volumen e hidratación.',
+		longDescription: 'Tratamientos para labios injectables y no injectables. Volumen e hidratación.', //  SAME BECAUSE MARIA CACHONDA SAID SO
 		duration: '1 hora',
 		icon: DropletIcon
 	},

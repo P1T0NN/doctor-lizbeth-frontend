@@ -102,7 +102,7 @@
 					<div>
 						<dt class="font-sans text-xl font-medium uppercase tracking-widest text-muted-foreground">Horarios</dt>
 						<dd class="mt-1 leading-relaxed text-foreground">
-							Lun–Vie · 10:00 — 19:00<br />
+							Lun–Vie · 10:00am — 2:00pm / 4:00pm - 8:00pm<br />
 							Sáb · 10:00 — 14:00
 						</dd>
 					</div>
