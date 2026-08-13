@@ -21,4 +21,5 @@ export type Service = {
 	longDescription: string;
 	duration: string;
 	icon: IconComponent;
+	image?: string;
 };

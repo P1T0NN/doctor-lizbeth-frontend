@@ -22,21 +22,24 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Neuromodulador para mejorar líneas de expresión, hiperhidrosis (sudoración excesiva), migraña, sonrisa gingival y bruxismo.',
 		duration: '30 min',
-		icon: SparklesIcon
+		icon: SparklesIcon,
+		image: '/root/services-1.jpeg'
 	},
 	{
 		name: 'Sculptra',
 		description: 'Bioestimulador de colágeno (ácido poli L láctico).',
 		longDescription: 'Bioestimulador de colágeno (ácido poli L láctico).',
 		duration: '45 min',
-		icon: LayersIcon
+		icon: LayersIcon,
+		image: '/root/services-2.jpeg'
 	},
 	{
 		name: 'Diamond Glow',
 		description: 'Limpieza facial profunda grado médico.',
 		longDescription: 'Limpieza facial profunda grado médico.',
 		duration: '1 hora',
-		icon: GemIcon
+		icon: GemIcon,
+		image: '/root/services-3.jpeg'
 	},
 	{
 		name: 'Nanopore',
@@ -44,56 +47,64 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Microagujas para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
-		icon: ScanLineIcon
+		icon: ScanLineIcon,
+		image: '/root/services-4.jpeg'
 	},
 	{
 		name: 'Liftera',
 		description: 'HIFU para mejorar lifting y firmeza del rostro.',
 		longDescription: 'HIFU para mejorar lifting y firmeza del rostro.',
 		duration: '1 hora',
-		icon: WandSparklesIcon
+		icon: WandSparklesIcon,
+		image: '/root/services-5.jpeg'
 	},
 	{
 		name: 'Genesis',
 		description: 'Definición y marcaje corporal con HIFEM.',
 		longDescription: 'HIFEM — 20,000 contracciones en 30 min para definición y marcaje corporal.',
 		duration: '30 min',
-		icon: DumbbellIcon
+		icon: DumbbellIcon,
+		image: '/root/services-6.jpeg'
 	},
 	{
 		name: 'Sculpt & Shape',
 		description: 'Radiofrecuencia para rostro y cuerpo.',
 		longDescription: 'Radiofrecuencia para mejorar flacidez, grasa y celulitis — rostro y cuerpo.',
 		duration: '1 hora',
-		icon: RadioIcon
+		icon: RadioIcon,
+		image: '/root/services-7.jpeg'
 	},
 	{
 		name: 'Novapress',
 		description: 'Presoterapia y drenaje linfático.',
 		longDescription: 'Presoterapia y drenaje linfático.',
 		duration: '1 hora',
-		icon: WindIcon
+		icon: WindIcon,
+		image: '/root/services-8.jpeg'
 	},
 	{
 		name: 'Enzimas reductoras',
 		description: 'Inyectable para flacidez y grasa localizada.',
 		longDescription: 'Inyectable para disminuir flacidez y grasa localizada.',
 		duration: '30 min',
-		icon: LeafIcon
+		icon: LeafIcon,
+		image: '/root/services-9.jpeg'
 	},
 	{
 		name: 'Cuidado de tus labios',
 		description: 'Tratamientos para labios injectables y no injectables. Volumen e hidratación.',
 		longDescription: 'Tratamientos para labios injectables y no injectables. Volumen e hidratación.', //  SAME BECAUSE MARIA CACHONDA SAID SO
 		duration: '1 hora',
-		icon: DropletIcon
+		icon: DropletIcon,
+		image: '/root/services-10.jpeg'
 	},
 	{
 		name: 'Depilación láser Venus Velocity',
 		description: 'Eliminación de vello no deseado en rostro y cuerpo.',
 		longDescription: 'Tecnología para eliminar el vello no deseado en rostro y cuerpo.',
 		duration: '15–90 min (según zona)',
-		icon: ZapIcon
+		icon: ZapIcon,
+		image: '/root/services-11.jpeg'
 	},
 	{
 		name: 'Jety',
@@ -101,6 +112,7 @@ export const SERVICES: Service[] = [
 		longDescription:
 			'Mesoterapia para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
-		icon: SyringeIcon
+		icon: SyringeIcon,
+		image: '/root/services-12.jpeg'
 	}
 ];

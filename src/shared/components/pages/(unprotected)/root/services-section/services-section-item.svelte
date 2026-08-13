@@ -20,11 +20,22 @@
 	onclick={onSelect}
 	class="group flex w-full cursor-pointer flex-col gap-4 bg-muted p-6 text-left transition-colors hover:bg-background focus-visible:ring-2 focus-visible:ring-ring focus-visible:outline-none lg:p-8"
 >
-	<div
-		class="placeholder-bg flex aspect-square w-full items-center justify-center bg-background"
-	>
-		<ServiceIcon class="text-muted-foreground" size={36} strokeWidth={1.6} />
-	</div>
+	{#if service.image}
+		<div class="flex aspect-square w-full overflow-hidden bg-background">
+			<img
+				src={service.image}
+				alt={service.name}
+				class="h-full w-full object-cover"
+				loading="lazy"
+			/>
+		</div>
+	{:else}
+		<div
+			class="placeholder-bg flex aspect-square w-full items-center justify-center bg-background"
+		>
+			<ServiceIcon class="text-muted-foreground" size={36} strokeWidth={1.6} />
+		</div>
+	{/if}
 
 	<div class="flex-1">
 		<h3 class="font-serif text-2xl leading-tight text-foreground">{service.name}</h3>
