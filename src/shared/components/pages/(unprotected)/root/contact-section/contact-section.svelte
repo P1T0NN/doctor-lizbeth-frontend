@@ -1,6 +1,5 @@
 <script lang="ts">
 	// SVELTEKIT IMPORTS
-	import { resolve } from '$app/paths';
 	import { PUBLIC_GOOGLE_STATIC_MAPS_API_KEY } from '$env/static/public';
 
 	// CONFIG
@@ -110,7 +109,9 @@
 			</dl>
 
 			<Button
-				href={resolve('/#agenda')}
+				href="https://citas.medicalfile.io/dra.lizbethrazo"
+				target="_blank"
+				rel="noopener noreferrer"
 				class="mt-10 h-auto gap-2 self-start rounded-none border-primary bg-primary px-8 py-4 text-xs tracking-widest text-primary-foreground uppercase hover:bg-secondary"
 			>
 				Agendar consulta <ArrowRightIcon class="size-4" strokeWidth={1.6} />

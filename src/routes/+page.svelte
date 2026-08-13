@@ -4,7 +4,6 @@
 	import ServicesSection from '@/shared/components/pages/(unprotected)/root/services-section/services-section.svelte';
 	import AboutSection from '@/shared/components/pages/(unprotected)/root/about-section.svelte';
 	import BookingSection from '@/shared/components/pages/(unprotected)/root/booking-section.svelte';
-	import GallerySection from '@/shared/components/pages/(unprotected)/root/gallery-section.svelte';
 	import TestimonialsSection from '@/shared/components/pages/(unprotected)/root/testimonials-section.svelte';
 	import ContactSection from '@/shared/components/pages/(unprotected)/root/contact-section/contact-section.svelte';
 	import WhatsappFloatingIcon from '@/shared/components/pages/(unprotected)/root/whatsapp-floating-icon.svelte';
@@ -25,8 +24,6 @@
 		<AboutSection />
 
 		<BookingSection />
-
-		<GallerySection />
 
 		<TestimonialsSection />
 

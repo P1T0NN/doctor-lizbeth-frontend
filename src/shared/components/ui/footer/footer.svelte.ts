@@ -7,7 +7,6 @@ export const footerLinkGroups = [
 			{ href: '/#top', label: 'Inicio' },
 			{ href: '/#servicios', label: 'Servicios' },
 			{ href: '/#sobre', label: 'Sobre mí' },
-			{ href: '/#galeria', label: 'Galería' },
 			{ href: '/#agenda', label: 'Agenda' },
 			{ href: '/#contacto', label: 'Contacto' }
 		]

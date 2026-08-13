@@ -3,7 +3,6 @@ export const navItems = [
 	{ href: '/#servicios', label: 'Servicios' },
 	{ href: '/#sobre', label: 'Sobre mí' },
 	{ href: '/#agenda', label: 'Agenda' },
-	{ href: '/#galeria', label: 'Galería' },
 	{ href: '/#contacto', label: 'Contacto' }
 ] as const;
 
