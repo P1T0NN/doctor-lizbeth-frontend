@@ -1,6 +1,6 @@
 <script lang="ts">
 	import './layout.css';
-	import favicon from '@/shared/lib/assets/favicon.svg';
+	import favicon from '/favicon.ico';
 
 	// COMPONENTS
 	import { Toaster } from '@/shared/components/ui/sonner';
