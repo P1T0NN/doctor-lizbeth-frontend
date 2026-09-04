@@ -23,7 +23,7 @@ export const SERVICES: Service[] = [
 			'Neuromodulador para mejorar líneas de expresión, hiperhidrosis (sudoración excesiva), migraña, sonrisa gingival y bruxismo.',
 		duration: '30 min',
 		icon: SparklesIcon,
-		image: '/root/services-1.jpeg'
+		image: '/root/opt/services-1-640w.webp'
 	},
 	{
 		name: 'Sculptra',
@@ -31,7 +31,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Bioestimulador de colágeno (ácido poli L láctico).',
 		duration: '45 min',
 		icon: LayersIcon,
-		image: '/root/services-2.jpeg'
+		image: '/root/opt/services-2-640w.webp'
 	},
 	{
 		name: 'Diamond Glow',
@@ -39,7 +39,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Limpieza facial profunda grado médico.',
 		duration: '1 hora',
 		icon: GemIcon,
-		image: '/root/services-3.jpeg'
+		image: '/root/opt/services-3-640w.webp'
 	},
 	{
 		name: 'Nanopore',
@@ -48,7 +48,7 @@ export const SERVICES: Service[] = [
 			'Microagujas para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
 		icon: ScanLineIcon,
-		image: '/root/services-4.jpeg'
+		image: '/root/opt/services-4-640w.webp'
 	},
 	{
 		name: 'Liftera',
@@ -56,7 +56,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'HIFU para mejorar lifting y firmeza del rostro.',
 		duration: '1 hora',
 		icon: WandSparklesIcon,
-		image: '/root/services-5.jpeg'
+		image: '/root/opt/services-5-640w.webp'
 	},
 	{
 		name: 'Genesis',
@@ -64,7 +64,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'HIFEM — 20,000 contracciones en 30 min para definición y marcaje corporal.',
 		duration: '30 min',
 		icon: DumbbellIcon,
-		image: '/root/services-6.jpeg'
+		image: '/root/opt/services-6-640w.webp'
 	},
 	{
 		name: 'Sculpt & Shape',
@@ -72,7 +72,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Radiofrecuencia para mejorar flacidez, grasa y celulitis — rostro y cuerpo.',
 		duration: '1 hora',
 		icon: RadioIcon,
-		image: '/root/services-7.jpeg'
+		image: '/root/opt/services-7-640w.webp'
 	},
 	{
 		name: 'Novapress',
@@ -80,7 +80,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Presoterapia y drenaje linfático.',
 		duration: '1 hora',
 		icon: WindIcon,
-		image: '/root/services-8.jpeg'
+		image: '/root/opt/services-8-960w.webp'
 	},
 	{
 		name: 'Enzimas reductoras',
@@ -88,7 +88,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Inyectable para disminuir flacidez y grasa localizada.',
 		duration: '30 min',
 		icon: LeafIcon,
-		image: '/root/services-9.jpeg'
+		image: '/root/opt/services-9-960w.webp'
 	},
 	{
 		name: 'Cuidado de tus labios',
@@ -96,7 +96,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Tratamientos para labios injectables y no injectables. Volumen e hidratación.', //  SAME BECAUSE MARIA CACHONDA SAID SO
 		duration: '1 hora',
 		icon: DropletIcon,
-		image: '/root/services-10.jpeg'
+		image: '/root/opt/services-10-960w.webp'
 	},
 	{
 		name: 'Depilación láser Venus Velocity',
@@ -104,7 +104,7 @@ export const SERVICES: Service[] = [
 		longDescription: 'Tecnología para eliminar el vello no deseado en rostro y cuerpo.',
 		duration: '15–90 min (según zona)',
 		icon: ZapIcon,
-		image: '/root/services-11.jpeg'
+		image: '/root/opt/services-11-560w.webp'
 	},
 	{
 		name: 'Jety',
@@ -113,6 +113,6 @@ export const SERVICES: Service[] = [
 			'Mesoterapia para mejorar cicatrices, textura, manchas, poros, hidratación y luminosidad.',
 		duration: '1 hora',
 		icon: SyringeIcon,
-		image: '/root/services-12.jpeg'
+		image: '/root/opt/services-12-640w.webp'
 	}
 ];

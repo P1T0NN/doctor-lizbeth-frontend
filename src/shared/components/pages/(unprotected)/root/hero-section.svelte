@@ -12,7 +12,7 @@
 >
 	<!-- Photo sizes the hero on phone; full-bleed behind text on lg+ -->
 	<img
-		src="/root/hero-section.jpeg"
+		src="/root/opt/hero-section-1536w.webp"
 		alt="Foto de Dra. Lizbeth Razo"
 		class="aspect-3/4 w-full -scale-x-100 object-cover object-top lg:absolute lg:inset-x-0 lg:top-20 lg:bottom-0 lg:aspect-auto lg:h-auto lg:object-center"
 	/>
@@ -33,8 +33,8 @@
 		<h1
 			class="mt-4 max-w-4xl font-serif text-4xl leading-[0.95] font-light text-balance sm:mt-5 sm:text-6xl lg:text-8xl"
 		>
-			Belleza que se siente<br />
-			<em class="font-normal italic">natural.</em>
+			Belleza que se<br />
+			<em class="font-normal italic">siente natural.</em>
 		</h1>
 		<p class="mt-6 max-w-xl text-base leading-relaxed text-primary-foreground/85 sm:mt-7 sm:text-lg">
 			Tratamientos faciales y corporales diseñados para realzar tu esencia, no para esconderla.

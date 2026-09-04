@@ -3,13 +3,17 @@
  * Optimizes every image in one or more folders into responsive WebP variants.
  *
  * Usage:
- *   node scripts/optimize-images.mjs <folder> [folder2 ...] [options]
+ *   node scripts/optimize-images.mjs [<folder> [folder2 ...]] [options]
  *
  * Folders are resolved in this order: as given (absolute or relative to cwd),
  * then relative to ./static. So all of these work:
  *   node scripts/optimize-images.mjs logo
  *   node scripts/optimize-images.mjs static/root root/testimonials
  *   node scripts/optimize-images.mjs "C:/some/abs/path"
+ *
+ * With no folder arguments, every folder under ./static that contains images is
+ * discovered and optimized automatically. Each folder gets its own <out>/
+ * subfolder (e.g. static/logo/opt/, static/root/opt/).
  *
  * Options:
  *   --sizes 640,960,1280,1536   Responsive widths to emit (default below)
@@ -50,7 +54,10 @@ function parseArgs(argv) {
 		if (a === '--no-recursive') opts.recursive = false;
 		else if (a === '--recursive') opts.recursive = true;
 		else if (a === '--sizes')
-			opts.sizes = argv[++i].split(',').map((s) => parseInt(s.trim(), 10)).filter(Boolean);
+			opts.sizes = argv[++i]
+				.split(',')
+				.map((s) => parseInt(s.trim(), 10))
+				.filter(Boolean);
 		else if (a === '--quality') opts.quality = parseInt(argv[++i], 10);
 		else if (a === '--out') opts.out = argv[++i];
 		else if (a.startsWith('--')) throw new Error(`Unknown option: ${a}`);
@@ -66,6 +73,23 @@ function resolveFolder(name) {
 		if (existsSync(c)) return c;
 	}
 	return null;
+}
+
+/** Find every folder under ./static that directly contains images, skipping outName dirs. */
+async function discoverImageDirs(outName) {
+	const dirs = [];
+	async function walk(dir) {
+		for (const entry of await readdir(dir, { withFileTypes: true })) {
+			const full = join(dir, entry.name);
+			if (entry.isDirectory()) {
+				if (entry.name === outName) continue;
+				if ((await collectImages(full, outName, false)).length > 0) dirs.push(full);
+				await walk(full);
+			}
+		}
+	}
+	await walk(STATIC);
+	return dirs;
 }
 
 /** Recursively collect image files, skipping the output subfolder. */
@@ -135,9 +159,15 @@ async function main() {
 	const { folders, opts } = parseArgs(process.argv.slice(2));
 
 	if (folders.length === 0) {
-		console.error('Usage: node scripts/optimize-images.mjs <folder> [folder2 ...] [options]');
-		console.error('Example: node scripts/optimize-images.mjs logo');
-		process.exit(1);
+		const discovered = await discoverImageDirs(opts.out);
+		if (discovered.length === 0) {
+			console.error(`No folders found under ${STATIC} containing images.`);
+			console.error('Usage: node scripts/optimize-images.mjs <folder> [folder2 ...] [options]');
+			console.error('Example: node scripts/optimize-images.mjs logo');
+			process.exit(1);
+		}
+		folders.push(...discovered);
+		console.log(`Discovered ${folders.length} image folder(s) under static/: ${folders.map((f) => relative(STATIC, f)).join(', ')}`);
 	}
 
 	console.log(
